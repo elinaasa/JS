@@ -3,5 +3,22 @@
 // Ravenclaw. Write an electronic sorting hat that asks for a student's name and draws a room for him.
 // If you enter Anna as the name, for example, the program prints to the HTML document "Anna, you are Ravenclaw."
 let nimi = prompt('Anna nimesi.');
-let numero = Math.floor((Math.random()*4)+1);
-console.log(numero);
+let num = Math.floor(Math.random()*4)+1;
+
+console.log(num);
+
+if (num === 1) {
+    document.querySelector('#p1').innerHTML = nimi + ', you are Gryffindor.';
+}
+
+if (num === 2) {
+    document.querySelector('#p1').innerHTML = nimi + ', you are Slytherin.';
+}
+
+if (num === 3) {
+    document.querySelector('#p1').innerHTML = nimi + ', you are Hufflepuff.';
+}
+
+if (num === 4) {
+    document.querySelector('#p1').innerHTML = nimi + ', you are Ravenclaw.';
+}
