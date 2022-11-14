@@ -5,7 +5,7 @@
 let lista = [];
 let listareverse = []
 for (let i = 0; i < 5; i++) {
-  let numero = parseInt(prompt('Anna numero'));
+  let numero = parseInt(prompt('Anna numero.'));
   lista.push(numero);
 
 }

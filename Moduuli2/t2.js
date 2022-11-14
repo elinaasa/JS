@@ -18,7 +18,7 @@ console.log(lista)
 let list = document.getElementById('htmllista');
 
 for (let item of lista) {
-  let ol = document.createElement('ol');
-  ol.innerHTML = item;
-  list.append(ol);
+  let li = document.createElement('li');
+  li.innerHTML = item;
+  list.append(li);
 }
