@@ -11,8 +11,11 @@ function rollDie(tahkot) {
 function playgame(tahkot) {
   const resultselem = document.getElementById('results');
   const ulelem = document.createElement('ul');
+
   resultselem.appendChild(ulelem);
+
   let dievalue = -1;
+
   while (dievalue !== tahkot) {
     dievalue = rollDie(20);
     console.log(dievalue);
@@ -23,6 +26,7 @@ function playgame(tahkot) {
   }
 
 }
-const diesize = prompt('Kuinka monta tahkoa nopalla on?')
+
+const diesize = prompt('Kuinka monta tahkoa nopalla on?');
 playgame(diesize);
 

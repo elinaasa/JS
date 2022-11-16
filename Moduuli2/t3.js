@@ -21,3 +21,5 @@ for (let item of listareverse) {
   li.innerHTML = item;
   list.append(li);
 }
+
+console.log(listareverse)
