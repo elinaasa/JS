@@ -24,7 +24,6 @@ function playgame(tahkot) {
     ulelem.append(lielem);
 
   }
-
 }
 
 const diesize = prompt('Kuinka monta tahkoa nopalla on?');

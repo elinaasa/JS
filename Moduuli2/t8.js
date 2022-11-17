@@ -1,12 +1,19 @@
-// Modify the function above so that it gets the number of sides on the dice as
-// a parameter. With the modified function you can for example roll a 21-sided
-// role-playing dice. The difference to the last exercise is that the dice
-// rolling in the main program continues until the program gets the maximum
-// number on the dice, which is asked from the user at the beginning. (2p)
+/*Write a function called concat(), which receives an array of strings as a
+parameter. The function returns a string formed by concatenating the elements
+of the array. (2p)
+   Example: In a four-item array, there are items Johnny, DeeDee, Joey and Marky. The function returns the string JohnnyDeeDeeJoeyMarky.
+   Do not use array.join() function
+   You can hardcode the array, no need for prompt().
+   Print the result to HTML document.*/
 
-function rollDie(tahkot) {
-  return Math.ceil(Math.random() * tahkot);
+let strlist = ['Jonny', 'Deedee', 'Joey', 'Marky'];
+
+function concat(array){
+  let modifiedvar = ''
+  for (i = 0; i<array.length; i++){
+    modifiedvar = modifiedvar + array[i];
+  }
+  return modifiedvar;
 }
-console.log(rollDie())
 
-const dievalue = rollDie(20)
+document.querySelector('#p').textContent = concat(strlist);
