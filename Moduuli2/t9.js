@@ -5,17 +5,17 @@
 // Print both the original array and the new array to the console in the main program after you have called the function.
 // You can hardcode the array, no need for prompt().
 
-const numarray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const numerolista = [1, 2, 3, 4, 5, 6, 7, 8];
 
-function even(array){
-  let evennumbers = []
-  for (i = 0; i<array.length; i++){
-    if (array[i] % 2 == 0){
-      evennumbers.push(array[i])
+function even(array) {
+  let parilliset = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      parilliset.push(array[i]);
     }
   }
-  return evennumbers
+  return parilliset;
 }
 
-console.log(numarray)
-console.log(even(numarray))
+console.log(numerolista);
+console.log(even(numerolista));
