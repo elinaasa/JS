@@ -1,8 +1,7 @@
-let html = document.querySelector('.container');
-let target = document.getElementById('target')
-
-
+let target = document.getElementById('target');
+target.classList.add('my-list')
 
 target.innerHTML = '<li>First item</li>\n' +
-                  '<li>Second item</li>\n' +
-                  '<li>Third item</li>';
+                    '<li>Second item</li>\n' +
+                    '<li>Third item</li>';
+
