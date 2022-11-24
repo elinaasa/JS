@@ -1,5 +1,6 @@
-let target = document.createElement('target').appendChild(list);
-const second = document.getElementsByTagName('li')[1];
+const lista = document.createElement('li');
+target.classList.add('my-list')
+my-list.appendChild(list[1])
 
 target.innerHTML = '<li>First item</li>\n' +
                     '<li>Second item</li>\n' +
