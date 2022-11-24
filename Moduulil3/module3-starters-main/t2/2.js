@@ -1,7 +1,16 @@
-const lista = document.createElement('li');
-target.classList.add('my-list')
-my-list.appendChild(list[1])
+let target = document.getElementById('target');
 
-target.innerHTML = '<li>First item</li>\n' +
-                    '<li>Second item</li>\n' +
-                    '<li>Third item</li>';
+let li1 = document.createElement('li')
+li1.innerText = 'First item'
+target.appendChild(li1)
+
+let li2 = document.createElement('li')
+li2.innerText = 'Second item'
+target.appendChild(li2)
+li2.classList.add('my-list')
+
+let li3 = document.createElement('li')
+li3.innerText = 'Third item'
+target.appendChild(li3)
+
+

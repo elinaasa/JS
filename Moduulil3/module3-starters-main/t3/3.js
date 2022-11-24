@@ -1,10 +1,12 @@
 'use strict';
-const names = ['John', 'Paul', 'Jones'];
 let target = document.getElementById('target');
-target.classList.add('my-list');
+const names = ['John', 'Paul', 'Jones'];
 
-let lielem = document.createElement('li');
 
-target.innerHTML = '<li>First item</li>\n' +
-    '<li>Second item</li>\n' +
-    '<li>Third item</li>';
+for (let x of names) {
+  let li = document.createElement('li')
+  li.innerText = x
+  target.appendChild(li)
+
+}
+
