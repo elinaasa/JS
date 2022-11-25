@@ -21,6 +21,5 @@ for (let x of students) {
   li.innerHTML = x.name;
   li.value = x.id;
   target.appendChild(li);
-  console.log(x)
 
 }
